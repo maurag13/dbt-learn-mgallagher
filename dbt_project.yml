@@ -33,4 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   jaffle_shop: #this normally says my_new_package. It should match the value for `name:`
     materialized: table
+    staging:
+      materialized: view
 
