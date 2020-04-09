@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+      - name: order_date
+      - name: status
+        description: "{{ doc('order_status') }}"
+      - name: amount
+        description: amount paid, in dollars
