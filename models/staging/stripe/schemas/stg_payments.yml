@@ -1,0 +1,13 @@
+version: 2
+models:
+  - name: stg_payments
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+      - name: payment_method
+      - name: amount
+        description: the amount paid, in dollars
+      - name: created_at
